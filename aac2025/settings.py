@@ -24,9 +24,14 @@ SECRET_KEY = 'v+5qaje@)c1j458bbzd7hark^kbdk787qph8zhvsp554t*&5*@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = [
+    "aac-2.onrender.com",
+    ".onrender.com",
+    "127.0.0.1",
+    "localhost",
+]
 
 
 # Application definition
