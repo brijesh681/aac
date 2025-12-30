@@ -1,0 +1,287 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}AAC 2025{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+<!-- 🔷 TOP HEADER IMAGE (like official site) -->
+<div class="top-banner">
+    <img src="{% static 'images/Web.png' %}" class="img-fluid w-100">
+
+</div>
+
+<!-- 🔷 NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark main-navbar sticky-top">
+    <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="/">AAC 2025</a> -->
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav mx-auto">
+
+    <!-- HOME -->
+    <li class="nav-item">
+        <a class="nav-link" href="https://aacindia2025.in/">Home</a>
+    </li>
+
+    <!-- ABOUT -->
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About</a>
+        <ul class="dropdown-menu">
+
+            <li><a class="dropdown-item" href="#">Welcome Message</a></li>
+            <li><a class="dropdown-item" href="#">AAC History</a></li>
+
+            <!-- COMMITTEE (SUB-DROPDOWN) -->
+            <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">Committee</a>
+                <ul class="dropdown-menu">
+
+                    <li><a class="dropdown-item" href="#">Patrons</a></li>
+                    <li><a class="dropdown-item" href="#">International Advisory Committee</a></li>
+                    <li><a class="dropdown-item" href="#">National Advisory Committee</a></li>
+                    <li><a class="dropdown-item" href="#">Technical Program Committee</a></li>
+                    <li><a class="dropdown-item" href="#">Funding and Coordination Committee</a></li>
+
+                    <!-- PUBLICATION COMMITTEE -->
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Publication Committee</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Publication Committee</a></li>
+                            <li><a class="dropdown-item" href="#">Student Editorial Team</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#">Awards Committee</a></li>
+                </ul>
+            </li>
+
+            <li><a class="dropdown-item" href="#">Important Dates</a></li>
+            <li><a class="dropdown-item" href="#">Venue</a></li>
+        </ul>
+    </li>
+
+    <!-- ABSTRACT -->
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            <span class="badge bg-danger me-1">New</span> Abstract
+        </a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Abstract Guideline</a></li>
+            <li><a class="dropdown-item" href="#">Detailed Schedule</a></li>
+        </ul>
+    </li>
+
+    <!-- PROGRAMME -->
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Programme</a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Pre Conference Workshop – Aerosol Instrumentation</a></li>
+            <li><a class="dropdown-item" href="#">Pre Conference Workshop – Remote Sensing</a></li>
+            <li><a class="dropdown-item" href="#">Tentative Schedule</a></li>
+            <li><a class="dropdown-item" href="#">Session Wise Schedule</a></li>
+            <li><a class="dropdown-item" href="#">Keynote Speaker</a></li>
+            <li><a class="dropdown-item" href="#">Plenary Speakers</a></li>
+            <li><a class="dropdown-item" href="#">Invited Speakers</a></li>
+            <li><a class="dropdown-item" href="#">Spouse Programme</a></li>
+        </ul>
+    </li>
+
+    <!-- AWARDS -->
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Awards</a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">AARA Fellow Award</a></li>
+            <li><a class="dropdown-item" href="#">Kanomax Award</a></li>
+            <li><a class="dropdown-item" href="#">Asian Young Aerosol Scientist Award</a></li>
+            <li><a class="dropdown-item" href="#">IASTA Young Scientist Award</a></li>
+            <li><a class="dropdown-item" href="#">IASTA Best M.Tech Thesis Award</a></li>
+            <li><a class="dropdown-item" href="#">IASTA Best Doctoral Thesis Award</a></li>
+            <li><a class="dropdown-item" href="#">IASTA Fellow Award</a></li>
+        </ul>
+    </li>
+
+    <!-- REGISTRATION -->
+    <li class="nav-item"><a class="nav-link" href="#">Registration</a></li>
+
+    <!-- PUBLICATION -->
+    <li class="nav-item">
+        <a class="nav-link" href="#">
+            <span class="badge bg-danger me-1">New</span> Publication
+        </a>
+    </li>
+
+    <!-- STUDENT SUPPORT -->
+    <li class="nav-item">
+        <a class="nav-link" href="#">
+            <span class="badge bg-danger me-1">New</span> Student Support
+        </a>
+    </li>
+     <!-- Partnerships -->
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+        Partnerships
+    </a>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Our Partners</a></li>
+        <li><a class="dropdown-item" href="#">Industrial Representative</a></li>
+        <li><a class="dropdown-item" href="#">Packages</a></li>
+        <li>
+            <a class="dropdown-item" target="_blank"
+               href="#">
+               IASTA Membership
+            </a>
+        </li>
+    </ul>
+</li>
+    <!-- Accommodations -->
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+        <span class="badge bg-danger me-1">New</span> Accommodations
+    </a>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Hostel Accommodations</a></li>
+        <li><a class="dropdown-item" href="#">Hotels</a></li>
+    </ul>
+</li>
+  <!-- Travel Info -->
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+        Travel Info
+    </a>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Local Tours</a></li>
+        <li><a class="dropdown-item" href="#">Pre & Post Tours</a></li>
+        <li><a class="dropdown-item" href="#">Visa Information</a></li>
+        <li><a class="dropdown-item" href="#">Interesting Places to Visit</a></li>
+    </ul>
+</li>
+<!-- Downloads -->
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+        <span class="badge bg-danger me-1">New</span> Downloads
+    </a>
+    <ul class="dropdown-menu">
+
+        <li>
+            <a class="dropdown-item" target="_blank"
+               href="https://aacindia2025.in/wp-content/uploads/2025/12/AAC-Schedule_01.12.2025.pdf">
+               Program at a glance
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item" target="_blank"
+               href="https://aacindia2025.in/wp-content/uploads/2025/11/Detailed-Schedule_26.11.25_v3.pdf">
+               Detailed Abstract Schedule
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item" target="_blank"
+               href="https://aacindia2025.in/download/4940/">
+               Platform Presentation Template
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item" target="_blank"
+               href="https://aacindia2025.in/download/4944/">
+               Poster Presentation Template
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item" target="_blank"
+               href="https://aacindia2025.in/download/4954/">
+               Lightning Talk Template
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item" target="_blank"
+               href="https://aacindia2025.in/wp-content/uploads/2025/11/AAC-INDIA-2025_Conference-Brochure_27.10.25.pdf">
+               Conference Brochure
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item" target="_blank"
+               href="https://aacindia2025.in/wp-content/uploads/2025/11/Concept-Note_AAC-2025.pdf">
+               Concept Note
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item disabled" href="#">
+               Travel Advisory (Coming Soon)
+            </a>
+        </li>
+
+    </ul>
+</li>
+
+    <!-- CONTACT -->
+    <li class="nav-item">
+        <a class="nav-link" href="https://aacindia2025.in/contact/">Contact</a>
+    </li>
+
+</ul>
+
+        </div>
+    </div>
+</nav>
+<!-- HERO SLIDESHOW SECTION -->
+<section class="hero-slideshow">
+
+    <!-- Latest Updates Ticker -->
+    <div class="latest-ticker">
+    <span class="ticker-label">Latest Updates</span>
+
+    <div class="ticker-marquee">
+        <div class="ticker-track">
+            <div class="ticker-content">
+                <a href="#">Regular Registration is Closed — Late Registration is Now Open!</a>
+                <span>|</span>
+                <a href="#">Platform, Lightning Talk & Poster Templates Updated</a>
+                <span>|</span>
+                <a href="#">AAC 2025 App is Live Now</a>
+                <span>|</span>
+            </div>
+
+            <!-- 🔁 DUPLICATE (mandatory) -->
+            <div class="ticker-content">
+                <a href="#">Regular Registration is Closed — Late Registration is Now Open!</a>
+                <span>|</span>
+                <a href="#">Platform, Lightning Talk & Poster Templates Updated</a>
+                <span>|</span>
+                <a href="#">AAC 2025 App is Live Now</a>
+                <span>|</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+<!-- 🔷 PAGE CONTENT -->
+{% block content %}{% endblock %}
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
